@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config({ path: '.env.local' });
+require('dotenv').config();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const { PORT } = require('../config.js');
