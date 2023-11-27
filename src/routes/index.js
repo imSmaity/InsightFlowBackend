@@ -11,6 +11,6 @@ const router = express.Router();
 router.route('/user').post(userRegister);
 router.route('/user/login').post(userLogin);
 router.route('/user/synchronize').get(authorize, userSynchronize);
-router.route('/user/info').get(getInfo);
+router.route('/user/info').get(authorize, getInfo);
 
 module.exports = router;
